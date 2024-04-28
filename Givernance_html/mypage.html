@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Givernance</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script> 
+    <script src="./js/mypage.js" defer ></script>
+  <!--  <script src="./js/meta.js"></script>
+    <link rel="stylesheet" href="css/metamask.css" type="text/css">
+    <script src="dist/metamask-onboarding.bundle.js"></script> -->
+</head>
+<body>
+    <div class="upperLinks">
+        <a id="mainPageLink" href="index.html">&#x1F54A Givernance</a>
+        <div class="logIn_signUp">
+            <a id="myPage" href="mypage.html">My Page</a>
+        </div>    
+    </div>
+  
+    <button id="connectButton"> Add Wallet </button>
+    <div id="accountSelector" style="margin-top: 20px; display:none;">
+        <label for="accounts">Choose an account:</label>
+        <select id="accounts"> 
+            계정 옵션은 여기에 동적으로 삽입됩니다 
+        </select>
+        <button id="confirmButton">Confirm Selection</button>
+    </div>
+
+
+    <div id="walletAddressContainer">
+        Your connected wallet address is: <span id="walletAddress"></span>
+        <button id="copyButton" style="display:none; margin-left: 10px;">Copy Address</button>
+    </div>
+    <div id="walletBalanceContainer" style="margin-top: 20px;">
+        Your wallet balance is: <span id="walletBalance"></span> 
+    </div>
+
+
+
+        <h3>후원한 모금함  <span id="donatedBox"></span></h3>
+        <div class="donatedBox">
+            <div class="buttonContainer">
+              <label>
+                <input type="radio" name="radio" checked/>
+                <span>모금중</span>
+              </label>
+              <label>
+                <input type="radio" name="radio"/>
+                <span>모금완료</span>
+              </label>
+              <label>
+                <input type="radio" name="radio"/>
+                <span>증빙완료</span>
+              </label>
+              <label>
+                <input type="radio" name="radio"/>
+                <span>투표완료</span>
+              </label>
+            </div>
+            <div class="donationType">
+              <label class="checkbox">
+                  <input type="checkbox" checked>
+                  <span>단기후원</span>
+              </label>
+              <label class="checkbox">
+                  <input type="checkbox">
+                  <span>정기후원</span>
+              </label>
+            </div>
+          </div>
+
+          <h3>개설한 모금함 <span id="createdBox"></span></h3>
+          <div class="donatedBox">
+            <div class="buttonContainer">
+              <label>
+                <input type="radio" name="radio" checked/>
+                <span>모금중</span>
+              </label>
+              <label>
+                <input type="radio" name="radio"/>
+                <span>모금완료</span>
+              </label>
+              <label>
+                <input type="radio" name="radio"/>
+                <span>증빙완료</span>
+              </label>
+              <label>
+                <input type="radio" name="radio"/>
+                <span>투표완료</span>
+              </label>
+            </div>
+            <div class="donationType">
+              <label class="checkbox">
+                  <input type="checkbox" checked>
+                  <span>단기후원</span>
+              </label>
+              <label class="checkbox">
+                  <input type="checkbox">
+                  <span>정기후원</span>
+              </label>
+            </div>
+          </div>
+        
+    </div>
+    
+</body>
+</html>
